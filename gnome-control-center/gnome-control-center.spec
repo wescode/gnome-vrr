@@ -10,11 +10,11 @@
 %define nm_version 1.24
 
 %global gnome_major_version 44
-%global gnome_version %{gnome_major_version}.3
+%global gnome_version %{gnome_major_version}.5
 %global tarball_version %%(echo %{gnome_version} | tr '~' '.')
 
 Name:           gnome-control-center
-Version:        %{gnome_version}.vrr.4
+Version:        %{gnome_version}.vrr.5
 Release:        %autorelease
 Summary:        Utilities to configure the GNOME desktop
 

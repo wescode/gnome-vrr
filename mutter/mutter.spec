@@ -10,11 +10,11 @@
 %global mutter_api_version 12
 
 %global gnome_major_version 44
-%global gnome_version %{gnome_major_version}.3
+%global gnome_version %{gnome_major_version}.5
 %global tarball_version %%(echo %{gnome_version} | tr '~' '.')
 
 Name:          mutter
-Version:       %{gnome_version}.vrr.17
+Version:       %{gnome_version}.vrr.18
 Release:       1%{?dist}
 Summary:       Window and compositing manager based on Clutter
 
@@ -117,7 +117,7 @@ Provides: firstboot(windowmanager) = mutter
 Provides: bundled(cogl) = 1.22.0
 Provides: bundled(clutter) = 1.26.0
 
-Conflicts: mutter < 44.3-2
+Conflicts: mutter < 44.5
 
 %description
 Mutter is a window and compositing manager that displays and manages
@@ -134,7 +134,7 @@ behaviors to meet the needs of the environment.
 %package common
 Summary: Common files used by %{name} and forks of %{name}
 BuildArch: noarch
-Conflicts: mutter < 44.3-2
+Conflicts: mutter < 44.5
 
 %description common
 Common files used by Mutter and soft forks of Mutter
